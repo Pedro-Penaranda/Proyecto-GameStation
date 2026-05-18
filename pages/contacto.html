@@ -19,8 +19,41 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main-contact">
+        <section class="contact">
+            <h1>Contactanos</h1>
 
+            <form class="form-contact" action="" method="POST">
+                <div class="cont-input">
+                    <label class="lbl-nombre lbl-form-contact" for="nombre">Nombre</label>
+                    <input class="ipt-nombre ipt-form-contact" type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre">
+                </div>
+
+                <div class="cont-input">
+                    <label class="lbl-mail lbl-form-contact" for="email">Email</label>
+                    <input class="ipt-email ipt-form-contact" type="email" id="email" name="email" placeholder="Ingresá tu email">
+                </div>
+
+                <div class="cont-input">
+                    <label class="lbl-msj lbl-form-contact" for="mensaje">Mensaje</label>
+                    <textarea class="txtArea-form" id="mensaje" name="mensaje" placeholder="Escribi tu mensaje..."></textarea>
+                </div>
+
+                <button class="btn-contact" type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+
+        <section class="newsletter">
+            <h2 class="title-newsletter">Newsletter</h2>
+
+            <p class="parr-newsletter">Recibi nuestras novedades, ofertas y nuevos productos.</p>
+
+            <form class="form-newsletter">
+                <input class="ipt-newletter ipt-form-contact" type="email" placeholder="Ingresá tu email">
+
+                <button class="btn-newsletter" type="submit">Suscribirme</button>
+            </form>
+        </section>
     </main>
 
     <footer class="foo">
@@ -33,10 +66,12 @@
         </ul>
 
         <ul class="list-redes">
-            <li class="item-redes"><img src="../img/redes/whatsapp.png" alt="wpp"></li>
+            <li class="item-redes"><img src="../img/redes/wpp.png" alt="wpp"></li>
             <li class="item-redes"><img src="../img/redes/instagram.png" alt="instagram"></li>
             <li class="item-redes"><img src="../img/redes/facebook.png" alt="facebook"></li>
         </ul>
     </footer>
+
+    <a class="subir" href="#">^</a>
 </body>
 </html>

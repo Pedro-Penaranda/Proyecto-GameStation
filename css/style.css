@@ -1,13 +1,12 @@
-/* <!-- Azul marino: #0B1F3A -->
-<!-- Bordó profundo: #6D1F3B -->
-<!-- Dorado suave: #C9A227 -->
-<!-- Beige claro: #E8E1D9 -->
-<!-- Blanco humo: #F7F7F5 --> */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: monospace;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -64,6 +63,12 @@ h1{
     text-align: center;
 }
 
+.title-productsIndex{
+    color: #C9A227;
+    text-align: center;
+    font-size: 24px;
+    margin: 40px 0px 0px;
+}
 /* cards */
 .cont-cards{
     display: grid;
@@ -127,9 +132,10 @@ h1{
 }
 
 .btn-product:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(245,197,66,.5);
-    border-right: 6px solid rgb(5, 104, 5);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px #c5940c83;
+    border-right: 6px solid #056805;
+    color: #056805;
 }
 
 /* Productos */
@@ -192,7 +198,86 @@ h1{
     margin: 10px 10px;
 }
 
-/* footer */
+/* Contacto y Newsletter */
+.contact, .newsletter{
+    max-width: 700px;
+    margin: auto;
+    background: #0B1F3A;
+    padding: 30px;
+    border-radius: 25px;
+    border: 2px solid rgba(245,197,66,.2);
+    margin-bottom: 20px;
+}
+
+.form-contact, .form-newsletter{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cont-input{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lbl-form-contact{
+    color: #f5c542;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.ipt-form-contact, .txtArea-form{
+    width: 100%;
+    background: #0f172a;
+    font-size: 15px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 14px;
+    color: #F7F7F5;
+    transition: .3s ease;
+}
+
+.txtArea-form{
+    min-height: 140px;
+}
+
+.ipt-form-contact:focus, .txtArea-form:focus{
+    outline: none;
+    border-color:#f5c542;
+}
+
+.btn-contact, .btn-newsletter{
+    background: linear-gradient(135deg,#d4a017,#f5c542);
+    color: #071d49;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 20px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.title-newsletter{
+    color: #C9A227;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.parr-newsletter{
+    color: #C9A227;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.btn-contact:hover, .btn-newsletter:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(197, 148, 12, 0.514);
+    color: #056805;
+}
+
+/* Footer */
 .foo{
     display: flex;
     justify-content: space-around;
@@ -221,4 +306,43 @@ h1{
 
 .foo .list-redes{
     display: flex;
+}
+
+/* Flecha para subir */
+.subir{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    font-size: 45px;
+    color: #071d49;
+    background-color: #C9A227;
+    border-radius: 50px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* MQ */
+@media(max-width: 768px){
+    .main-contact{
+        padding: 20px;
+    }
+    .contacto, .newsletter{
+        padding: 25px;
+    }
+
+    .subir{
+    opacity: 1;
+    visibility: visible;
+    }
+}
+
+@media (max-width: 520px) {
+    .foo{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
