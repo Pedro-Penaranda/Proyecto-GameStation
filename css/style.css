@@ -1,0 +1,224 @@
+/* <!-- Azul marino: #0B1F3A -->
+<!-- Bordó profundo: #6D1F3B -->
+<!-- Dorado suave: #C9A227 -->
+<!-- Beige claro: #E8E1D9 -->
+<!-- Blanco humo: #F7F7F5 --> */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    background:
+    linear-gradient(135deg,#14001f,#240046);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Menu */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo{
+    color: #C9A227;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+}
+
+.nav .nav-list{
+    list-style: none;
+    gap: 10px;
+    display: flex;
+    margin-right: 10px;
+}
+
+.nav .nav-list .nav-item a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #F7F7F5;
+}
+
+/* titulo */
+h1{
+    color: #C9A227;
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.parr-index{
+    color: #F7F7F5;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* cards */
+.cont-cards{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    padding: 40px;
+}
+
+.card{
+    padding: 10px;
+    width: 18rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0B1F3A;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 3px #312a12;
+    border-top: 1px solid #C9A227;
+    border-left: 1px solid #C9A227;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    transition: .3s ease;
+}
+
+.nom-product{
+    font-size: 20px;
+    color: #C9A227;
+    margin-bottom: 10px;
+}
+
+.img-product{
+    width: 17rem;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 2px solid #C9A227;
+    margin-bottom: 10px;
+}
+
+.precio{
+    color: #F7F7F5;
+    font-size: 18px;
+}
+
+.btn-product{
+    margin-top: 14px;
+    background: linear-gradient(135deg,#d4a017,#f5c542);
+    color: #071d49;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s ease;
+    border-right: 4px solid #F7F7F5;
+}
+
+.btn-product:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(245,197,66,.5);
+    border-right: 6px solid rgb(5, 104, 5);
+}
+
+/* Productos */
+.cont-cards-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 35px;
+    justify-items: center;
+    padding: 10px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.title-products{
+    color: #C9A227;
+    font-size: 19px;
+    margin-top: 20px;
+    margin-left: 2%;
+}
+
+.title-products::before{
+    content: ">";
+    background: #071d49;
+    border-radius: 10px;
+    margin-right: 6px;
+    padding: 5px;
+}
+
+
+/* metodos de pago */
+.cont-metPay{
+    border-top: 2px solid #071d49;
+}
+
+.cont-metPay .title-pay{
+    color: #C9A227;
+    text-align: end;
+    font-size: 19px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.cont-metPay .list-metPay{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cont-metPay .list-metPay .item-metPay img{
+    width: 90px;
+}
+
+.cont-metPay .ymas{
+    color: #C9A227;
+    text-align: end;
+    font-size: 19px;
+    font-weight: 900;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+/* footer */
+.foo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #071d49;
+    padding: 20px;
+}
+
+.foo .logo-footer{
+    color: #C9A227;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+}
+
+.foo .list-footer{
+    list-style: disc;
+    color: #F7F7F5;
+}
+
+.foo .list-footer .item-footer a{
+    color: #F7F7F5;
+    font-size: 16px;
+}
+
+.foo .list-redes{
+    display: flex;
+}
